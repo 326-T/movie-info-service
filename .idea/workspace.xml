@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebc19a7f-4d6b-4d85-a9c7-08e2bada49c6" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/MovieInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/MovieInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/it/MovieInfoApi.java" afterDir="false" />
+    <list default="true" id="ebc19a7f-4d6b-4d85-a9c7-08e2bada49c6" name="Changes" comment="[add]結合テストを追加">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/MovieInfoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/MovieInfoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/MovieInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/MovieInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,23 +65,23 @@
       <recent name="org.example.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieInfoApi">
-    <configuration name="MovieInfoApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MovieInfoServiceTest">
+    <configuration name="MovieInfoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-info-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.it.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.it" />
-      <option name="MAIN_CLASS_NAME" value="org.example.it.MovieInfoApi" />
+      <option name="PACKAGE_NAME" value="org.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.controller.MovieInfoControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieInfoApi.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieInfoIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-info-service" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +90,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.it" />
-      <option name="MAIN_CLASS_NAME" value="org.example.it.MovieInfoApi" />
+      <option name="MAIN_CLASS_NAME" value="org.example.it.MovieInfoIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieInfoIT.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie-info-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.it.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.it" />
+      <option name="MAIN_CLASS_NAME" value="org.example.it.MovieInfoIT" />
       <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -114,28 +127,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieInfoRepositoryTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieInfoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie-info-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.repository.*" />
+          <option name="PATTERN" value="org.example.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.repository" />
-      <option name="MAIN_CLASS_NAME" value="org.example.repository.MovieInfoRepositoryTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.MovieInfoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieInfoApi" />
-        <item itemvalue="JUnit.MovieInfoApi.getAll" />
+        <item itemvalue="JUnit.MovieInfoServiceTest" />
+        <item itemvalue="JUnit.MovieInfoControllerTest" />
+        <item itemvalue="JUnit.MovieInfoIT" />
+        <item itemvalue="JUnit.MovieInfoIT.getAll" />
         <item itemvalue="JUnit.MovieInfoRepositoryTest" />
-        <item itemvalue="JUnit.MovieInfoRepositoryTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -155,11 +168,19 @@
       <option name="project" value="LOCAL" />
       <updated>1691775800173</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[add]結合テストを追加">
+      <created>1691816298330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691816298330</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="[add]結合テストを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]結合テストを追加" />
   </component>
 </project>
